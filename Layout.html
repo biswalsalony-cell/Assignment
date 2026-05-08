@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Layout</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#ece7f7;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .container{
+      width:900px;
+      background:white;
+      border-radius:20px;
+      padding:20px;
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:20px;
+    }
+
+    /* Left Section */
+    .left{
+      padding:30px 20px;
+    }
+
+    .small-text{
+      color:#6c4dff;
+      font-size:12px;
+      margin-bottom:20px;
+      font-weight:bold;
+    }
+
+    h1{
+      font-size:50px;
+      line-height:1.1;
+      margin-bottom:20px;
+      color:#111;
+    }
+
+    h1 span{
+      color:#5a3df0;
+    }
+
+    p{
+      color:#666;
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:25px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+    }
+
+    .btn{
+      padding:12px 24px;
+      border:none;
+      border-radius:12px;
+      font-size:14px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    .signup{
+      background:#5a3df0;
+      color:white;
+      box-shadow:0 4px 10px rgba(90,61,240,0.4);
+    }
+
+    .browse{
+      background:#f1f1f1;
+      color:#333;
+    }
+
+    /* Right Section */
+    .right{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:15px;
+    }
+
+    .watch img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:15px;
+    }
+
+    .side{
+      display:grid;
+      grid-template-rows:1fr 1fr;
+      gap:15px;
+    }
+
+    .headphone img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:15px;
+    }
+
+    .card{
+      background:#5a3df0;
+      color:white;
+      border-radius:15px;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#ddd;
+      font-size:13px;
+      margin:0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Left Section -->
+    <div class="left">
+      <div class="small-text">PREMIUM COLLECTION 2024</div>
+
+      <h1>
+        Elevate Your <br>
+        <span>Daily Essentials.</span>
+      </h1>
+
+      <p>
+        Experience the perfect blend of minimalist design and high-
+        performance technology with our curated luxury selection.
+      </p>
+
+      <div class="buttons">
+        <button class="btn signup">Sign Up</button>
+        <button class="btn browse">Browse Now</button>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+
+      <div class="watch">
+        <img src="https://assets.myntassets.com/w_200,q_50,,dpr_3,fl_progressive,f_webp/assets/images/32143300/2025/6/5/0e0d2230-fb24-4933-8432-ce69a36a35021749103445513-Timex-Men-Analogue-Stainless-Steel-Bracelet-Style-Watch---TW-16.jpg" alt="Watch">
+      </div>
+
+      <div class="side">
+
+        <div class="headphone">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeZjeiM0fhq3K0l1Swi1b6HqIG9WbdepeyCA&s" alt="Headphone">
+        </div>
+
+        <div class="card">
+          <h3>Smart Curation</h3>
+          <p>AI-driven choices for your lifestyle.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
