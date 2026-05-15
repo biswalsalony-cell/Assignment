@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: url('https://www.shutterstock.com/image-photo/top-view-desk-table-office-600nw-2164006579.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        nav{
+            width: 100%;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        nav ul{
+            list-style: none;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        .box{
+            border: 8px solid white;
+            padding: 40px 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .box h1{
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .box h2{
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .box p{
+            font-size: 25px;
+        }
+
+        .buttons{
+            margin-top: 40px;
+        }
+
+        .button1{
+            padding: 15px 40px;
+            border: 2px solid orange;
+            background: transparent;
+            color: white;
+            margin-right: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button2{
+            padding: 15px 50px;
+            border: none;
+            background: white;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">WORK EXPERIENCE</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">INTEREST</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+
+        <div class="box">
+            <h1>HELLO!</h1>
+            <h2>I’M SALONY</h2>
+            <p>WEB DEVELOPER</p>
+        </div>
+
+        <div class="buttons">
+            <button class="button1">DOWNLOAD CV</button>
+            <button class="button2">HIRE ME</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
